@@ -1,0 +1,19 @@
+{
+  "name": "labelkit",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "jsbarcode": "^3.12.3",
+    "jspdf": "^4.1.0",
+    "next": "^15.3.3",
+    "qrcode.react": "^4.2.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}

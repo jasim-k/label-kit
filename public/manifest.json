@@ -1,0 +1,21 @@
+{
+  "name": "LabelKit",
+  "short_name": "LabelKit",
+  "description": "Free online barcode and Apple 2D code generator with PDF export",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#6366f1",
+  "icons": [
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

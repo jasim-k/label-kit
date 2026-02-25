@@ -14,12 +14,12 @@ const tools = [
     iconBg: 'rgba(99,102,241,0.12)',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <rect x="1"  y="2" width="2"   height="20" rx="0.5" />
-        <rect x="5"  y="2" width="1"   height="20" rx="0.5" />
-        <rect x="8"  y="2" width="3"   height="20" rx="0.5" />
-        <rect x="13" y="2" width="1"   height="20" rx="0.5" />
-        <rect x="16" y="2" width="2"   height="20" rx="0.5" />
-        <rect x="20" y="2" width="1"   height="20" rx="0.5" />
+        <rect x="1" y="2" width="2" height="20" rx="0.5" />
+        <rect x="5" y="2" width="1" height="20" rx="0.5" />
+        <rect x="8" y="2" width="3" height="20" rx="0.5" />
+        <rect x="13" y="2" width="1" height="20" rx="0.5" />
+        <rect x="16" y="2" width="2" height="20" rx="0.5" />
+        <rect x="20" y="2" width="1" height="20" rx="0.5" />
         <rect x="22" y="2" width="1.5" height="20" rx="0.5" />
       </svg>
     ),
@@ -35,12 +35,12 @@ const tools = [
     iconBg: 'rgba(139,92,246,0.12)',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <rect x="1"  y="1"  width="7" height="7" rx="1" fill="none" stroke="currentColor" strokeWidth="1.8" />
-        <rect x="3"  y="3"  width="3" height="3" rx="0.5" />
-        <rect x="16" y="1"  width="7" height="7" rx="1" fill="none" stroke="currentColor" strokeWidth="1.8" />
-        <rect x="18" y="3"  width="3" height="3" rx="0.5" />
-        <rect x="1"  y="16" width="7" height="7" rx="1" fill="none" stroke="currentColor" strokeWidth="1.8" />
-        <rect x="3"  y="18" width="3" height="3" rx="0.5" />
+        <rect x="1" y="1" width="7" height="7" rx="1" fill="none" stroke="currentColor" strokeWidth="1.8" />
+        <rect x="3" y="3" width="3" height="3" rx="0.5" />
+        <rect x="16" y="1" width="7" height="7" rx="1" fill="none" stroke="currentColor" strokeWidth="1.8" />
+        <rect x="18" y="3" width="3" height="3" rx="0.5" />
+        <rect x="1" y="16" width="7" height="7" rx="1" fill="none" stroke="currentColor" strokeWidth="1.8" />
+        <rect x="3" y="18" width="3" height="3" rx="0.5" />
         <rect x="16" y="16" width="3" height="3" rx="0.5" />
         <rect x="21" y="16" width="2" height="3" rx="0.5" />
         <rect x="16" y="21" width="3" height="2" rx="0.5" />
@@ -82,6 +82,30 @@ const tools = [
       </svg>
     ),
   },
+  {
+    href: '/qr-size',
+    title: 'QR Size Optimizer',
+    description: 'Calculate the minimum safe print size for any QR code. Input content, set error correction & print reliability — get exact mm, cm, and inch dimensions.',
+    tag: 'Size Calculator',
+    isNew: true,
+    color: '#f59e0b',
+    glow: 'rgba(245,158,11,0.22)',
+    iconBg: 'rgba(245,158,11,0.12)',
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <rect x="2" y="2" width="7" height="7" rx="1" stroke="currentColor" strokeWidth="1.8" />
+        <rect x="4" y="4" width="3" height="3" fill="currentColor" rx="0.5" />
+        <rect x="15" y="2" width="7" height="7" rx="1" stroke="currentColor" strokeWidth="1.8" />
+        <rect x="17" y="4" width="3" height="3" fill="currentColor" rx="0.5" />
+        <rect x="2" y="15" width="7" height="7" rx="1" stroke="currentColor" strokeWidth="1.8" />
+        <rect x="4" y="17" width="3" height="3" fill="currentColor" rx="0.5" />
+        <line x1="15" y1="15" x2="22" y2="15" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+        <line x1="15" y1="19" x2="22" y2="19" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+        <line x1="15" y1="22" x2="22" y2="22" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+        <line x1="15" y1="15" x2="15" y2="22" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+      </svg>
+    ),
+  },
 ]
 
 export default function LandingPage() {
@@ -91,7 +115,7 @@ export default function LandingPage() {
         <p className="landing-eyebrow">Label &amp; QR Generation Suite</p>
         <h1 className="landing-title">LabelKit</h1>
         <p className="landing-tagline">
-          Four precision tools for barcodes, QR codes &amp; labels.<br />
+          Five precision tools for barcodes, QR codes &amp; labels.<br />
           Runs entirely in your browser — nothing leaves your device.
         </p>
         <div className="landing-pills">

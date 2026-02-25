@@ -7,14 +7,14 @@ body {
   min-height: 100vh;
 }
 
-/* Layout */
+/* ─── Layout ─────────────────────────────────── */
 .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
 
-/* Typography */
+/* ─── Typography ─────────────────────────────── */
 h1 { color: #f8fafc; font-size: 28px; font-weight: 700; margin-bottom: 6px; }
 .subtitle { color: #94a3b8; font-size: 14px; margin-bottom: 24px; }
 
-/* Back link */
+/* ─── Back link ──────────────────────────────── */
 .back-link {
   display: inline-block;
   color: #818cf8;
@@ -25,9 +25,9 @@ h1 { color: #f8fafc; font-size: 28px; font-weight: 700; margin-bottom: 6px; }
   transition: color 0.15s;
 }
 .back-link:hover { color: #a5b4fc; }
-.back-link::before { content: '\2190  '; }
+.back-link::before { content: '← '; }
 
-/* Card */
+/* ─── Card (tool pages) ──────────────────────── */
 .card {
   background: #1e293b;
   border: 1px solid #334155;
@@ -35,7 +35,7 @@ h1 { color: #f8fafc; font-size: 28px; font-weight: 700; margin-bottom: 6px; }
   padding: 24px;
 }
 
-/* Inputs */
+/* ─── Inputs ─────────────────────────────────── */
 textarea {
   width: 100%;
   height: 180px;
@@ -67,6 +67,27 @@ input[type="text"] {
 }
 input[type="text"]::placeholder { color: #475569; }
 input[type="text"]:focus { border-color: #6366f1; }
+input[type="text"]:disabled { opacity: 0.4; cursor: not-allowed; }
+
+select {
+  padding: 10px 36px 10px 14px;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2394a3b8' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+select:focus { border-color: #6366f1; }
 
 label {
   display: block;
@@ -76,7 +97,7 @@ label {
   margin-bottom: 6px;
 }
 
-/* Buttons */
+/* ─── Buttons ────────────────────────────────── */
 .btn-generate {
   margin-top: 16px;
   padding: 12px 28px;
@@ -110,7 +131,7 @@ label {
   box-shadow: 0 4px 16px rgba(239, 68, 68, 0.4);
 }
 
-/* Results */
+/* ─── Results section ────────────────────────── */
 .results-header {
   display: flex;
   align-items: center;
@@ -135,7 +156,7 @@ label {
   border-radius: 20px;
 }
 
-/* Barcode items */
+/* ─── Barcode items ───────────────────────────── */
 .barcode-item {
   background: #fff;
   padding: 24px;
@@ -156,7 +177,7 @@ label {
   letter-spacing: 1px;
 }
 
-/* 2D code items */
+/* ─── 2D code items ───────────────────────────── */
 .code-2d-item {
   background: #fff;
   padding: 24px;
@@ -167,6 +188,7 @@ label {
 }
 .code-2d-item:hover { transform: translateY(-2px); }
 .code-2d-item canvas { max-width: 100%; height: auto; }
+
 .code-2d-label {
   margin-top: 10px;
   font-size: 14px;
@@ -176,102 +198,211 @@ label {
   letter-spacing: 1px;
 }
 
-/* Landing page */
-.landing {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 60px 20px;
+/* ─── Error box ───────────────────────────────── */
+.error-box {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #fca5a5;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 12px;
 }
 
+/* ═══════════════════════════════════════════════
+   LANDING PAGE
+═══════════════════════════════════════════════ */
+
+@keyframes gradient-pan {
+  0%   { background-position: 0%   center; }
+  100% { background-position: 100% center; }
+}
+
+.landing {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 72px 24px 80px;
+}
+
+/* Hero */
 .landing-hero {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 64px;
+}
+
+.landing-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #6366f1;
+  margin-bottom: 16px;
 }
 
 .landing-title {
-  font-size: 52px;
+  font-size: 80px;
   font-weight: 800;
-  background: linear-gradient(135deg, #6366f1, #8b5cf6, #a78bfa);
+  letter-spacing: -4px;
+  line-height: 1;
+  margin-bottom: 24px;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6, #0ea5e9, #10b981, #6366f1);
+  background-size: 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 12px;
-  letter-spacing: -1px;
+  animation: gradient-pan 6s ease-in-out infinite alternate;
 }
 
 .landing-tagline {
   color: #94a3b8;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
+  line-height: 1.7;
+  max-width: 460px;
+  margin: 0 auto 32px;
 }
 
+.landing-pills {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pill {
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 20px;
+  padding: 5px 14px;
+  letter-spacing: 0.2px;
+}
+
+/* Grid */
 .landing-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 20px;
 }
 
-@media (max-width: 600px) {
-  .landing-grid { grid-template-columns: 1fr; }
-  .landing-title { font-size: 36px; }
-}
-
+/* Cards */
 .landing-card {
   background: #1e293b;
   border: 1px solid #334155;
+  border-top: 3px solid var(--accent);
   border-radius: 16px;
-  padding: 36px 28px;
+  padding: 28px;
   text-decoration: none;
-  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
+  transition: transform 0.22s, box-shadow 0.22s, border-color 0.22s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Radial glow that fades in on hover */
+.landing-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 90% 60% at 50% 0%, var(--glow), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.35s;
+  pointer-events: none;
 }
 
 .landing-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15);
-  border-color: #6366f1;
+  transform: translateY(-6px);
+  box-shadow: 0 24px 64px var(--glow);
+  border-color: var(--accent);
+  border-top-width: 3px;
 }
 
-.landing-card .card-icon {
-  font-size: 36px;
-  font-weight: 900;
-  letter-spacing: -3px;
-  color: #6366f1;
-  font-family: 'SF Mono', 'Fira Code', monospace;
-  margin-bottom: 4px;
+.landing-card:hover::before {
+  opacity: 1;
 }
 
-.landing-card .card-icon-2d {
-  color: #8b5cf6;
-  margin-bottom: 4px;
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
 }
 
-.landing-card h2 {
+.card-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--icon-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.card-new-badge {
+  font-size: 10px;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: var(--icon-bg);
+  color: var(--accent);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 1px solid var(--accent);
+}
+
+.card-title {
   color: #f8fafc;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   margin: 0;
 }
 
-.landing-card p {
+.card-desc {
   color: #94a3b8;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.65;
   margin: 0;
   flex: 1;
 }
 
-.landing-card .card-action {
-  display: inline-block;
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 8px;
-  color: #818cf8;
-  font-size: 14px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card-tag {
+  font-size: 11px;
+  font-weight: 700;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.card-action {
+  font-size: 13px;
   font-weight: 600;
-  transition: color 0.15s;
+  color: var(--accent);
+  transition: letter-spacing 0.2s;
 }
 
 .landing-card:hover .card-action {
-  color: #a5b4fc;
+  letter-spacing: 0.4px;
+}
+
+/* ─── Responsive ─────────────────────────────── */
+@media (max-width: 640px) {
+  .landing-grid { grid-template-columns: 1fr; }
+  .landing-title { font-size: 52px; letter-spacing: -2px; }
+  .landing-tagline { font-size: 15px; }
+  .landing { padding: 48px 16px 60px; }
 }

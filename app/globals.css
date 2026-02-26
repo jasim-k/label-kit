@@ -1,5 +1,9 @@
 /* Reset */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -8,11 +12,25 @@ body {
 }
 
 /* ─── Layout ─────────────────────────────────── */
-.container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
 
 /* ─── Typography ─────────────────────────────── */
-h1 { color: #f8fafc; font-size: 28px; font-weight: 700; margin-bottom: 6px; }
-.subtitle { color: #94a3b8; font-size: 14px; margin-bottom: 24px; }
+h1 {
+  color: #f8fafc;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #94a3b8;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
 
 /* ─── Back link ──────────────────────────────── */
 .back-link {
@@ -24,8 +42,14 @@ h1 { color: #f8fafc; font-size: 28px; font-weight: 700; margin-bottom: 6px; }
   margin-bottom: 24px;
   transition: color 0.15s;
 }
-.back-link:hover { color: #a5b4fc; }
-.back-link::before { content: '← '; }
+
+.back-link:hover {
+  color: #a5b4fc;
+}
+
+.back-link::before {
+  content: '← ';
+}
 
 /* ─── Card (tool pages) ──────────────────────── */
 .card {
@@ -50,8 +74,14 @@ textarea {
   outline: none;
   transition: border-color 0.2s;
 }
-textarea::placeholder { color: #475569; }
-textarea:focus { border-color: #6366f1; }
+
+textarea::placeholder {
+  color: #475569;
+}
+
+textarea:focus {
+  border-color: #6366f1;
+}
 
 input[type="text"] {
   padding: 10px 14px;
@@ -65,9 +95,19 @@ input[type="text"] {
   transition: border-color 0.2s;
   box-sizing: border-box;
 }
-input[type="text"]::placeholder { color: #475569; }
-input[type="text"]:focus { border-color: #6366f1; }
-input[type="text"]:disabled { opacity: 0.4; cursor: not-allowed; }
+
+input[type="text"]::placeholder {
+  color: #475569;
+}
+
+input[type="text"]:focus {
+  border-color: #6366f1;
+}
+
+input[type="text"]:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
 
 select {
   padding: 10px 36px 10px 14px;
@@ -87,7 +127,10 @@ select {
   cursor: pointer;
   box-sizing: border-box;
 }
-select:focus { border-color: #6366f1; }
+
+select:focus {
+  border-color: #6366f1;
+}
 
 label {
   display: block;
@@ -110,6 +153,7 @@ label {
   cursor: pointer;
   transition: transform 0.15s, box-shadow 0.15s;
 }
+
 .btn-generate:hover {
   transform: translateY(-1px);
   box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
@@ -126,6 +170,7 @@ label {
   cursor: pointer;
   transition: transform 0.15s, box-shadow 0.15s;
 }
+
 .btn-pdf:hover {
   transform: translateY(-1px);
   box-shadow: 0 4px 16px rgba(239, 68, 68, 0.4);
@@ -139,7 +184,11 @@ label {
   margin-top: 32px;
   margin-bottom: 16px;
 }
-.results-header h2 { color: #f8fafc; font-size: 20px; }
+
+.results-header h2 {
+  color: #f8fafc;
+  font-size: 20px;
+}
 
 .results-actions {
   display: flex;
@@ -165,8 +214,15 @@ label {
   text-align: center;
   transition: transform 0.15s;
 }
-.barcode-item:hover { transform: translateY(-2px); }
-.barcode-item svg { max-width: 100%; height: auto; }
+
+.barcode-item:hover {
+  transform: translateY(-2px);
+}
+
+.barcode-item svg {
+  max-width: 100%;
+  height: auto;
+}
 
 .barcode-label {
   margin-top: 10px;
@@ -186,8 +242,15 @@ label {
   text-align: center;
   transition: transform 0.15s;
 }
-.code-2d-item:hover { transform: translateY(-2px); }
-.code-2d-item canvas { max-width: 100%; height: auto; }
+
+.code-2d-item:hover {
+  transform: translateY(-2px);
+}
+
+.code-2d-item canvas {
+  max-width: 100%;
+  height: auto;
+}
 
 .code-2d-label {
   margin-top: 10px;
@@ -214,8 +277,13 @@ label {
 ═══════════════════════════════════════════════ */
 
 @keyframes gradient-pan {
-  0%   { background-position: 0%   center; }
-  100% { background-position: 100% center; }
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 100% center;
+  }
 }
 
 .landing {
@@ -401,8 +469,420 @@ label {
 
 /* ─── Responsive ─────────────────────────────── */
 @media (max-width: 640px) {
-  .landing-grid { grid-template-columns: 1fr; }
-  .landing-title { font-size: 52px; letter-spacing: -2px; }
-  .landing-tagline { font-size: 15px; }
-  .landing { padding: 48px 16px 60px; }
+  .landing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .landing-title {
+    font-size: 52px;
+    letter-spacing: -2px;
+  }
+
+  .landing-tagline {
+    font-size: 15px;
+  }
+
+  .landing {
+    padding: 48px 16px 60px;
+  }
+}
+
+/* ═══════════════════════════════════════════════
+   QR SIZE OPTIMIZER PAGE
+═══════════════════════════════════════════════ */
+
+.qso-page {
+  max-width: 1020px;
+}
+
+/* Two-column layout */
+.qso-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 20px;
+  align-items: start;
+}
+
+/* ── Fields ── */
+.qso-field {
+  margin-bottom: 16px;
+}
+
+.qso-field:last-child {
+  margin-bottom: 0;
+}
+
+.qso-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.qso-hint {
+  font-size: 11px;
+  color: #475569;
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+.qso-byte-count {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+  font-size: 12px;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+.qso-error-badge {
+  background: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 12px;
+  padding: 2px 10px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* ── Results card ── */
+.qso-results {
+  margin-top: 20px;
+}
+
+.qso-results-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.qso-results-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.qso-copy-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #94a3b8;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.qso-copy-btn:hover {
+  color: #f8fafc;
+  border-color: #6366f1;
+  background: rgba(99, 102, 241, 0.08);
+}
+
+/* ── Reliability badge ── */
+.qso-reliability-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.qso-rel-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.6;
+    transform: scale(1.3);
+  }
+}
+
+/* ── Metrics grid ── */
+.qso-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.qso-metric {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: border-color 0.2s;
+}
+
+.qso-metric:hover {
+  border-color: #334155;
+}
+
+.qso-metric-accent {
+  border-color: rgba(99, 102, 241, 0.25);
+  background: rgba(99, 102, 241, 0.05);
+}
+
+.qso-metric-accent:hover {
+  border-color: rgba(99, 102, 241, 0.5);
+}
+
+.qso-metric-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.qso-metric-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: #f8fafc;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  line-height: 1.2;
+}
+
+.qso-metric-big {
+  font-size: 28px;
+}
+
+.qso-metric-sub {
+  font-size: 12px;
+  color: #475569;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+/* ── Size bar ── */
+
+.qso-bar-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #475569;
+  margin-bottom: 6px;
+}
+
+.qso-bar-track {
+  position: relative;
+  height: 8px;
+  background: #0f172a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.qso-bar-safe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(99, 102, 241, 0.2);
+  border-radius: 8px;
+  transition: width 0.4s ease;
+}
+
+.qso-bar-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.4s ease, background 0.3s;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+/* ── Empty state ── */
+.qso-empty-hint {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 40px 24px;
+  color: #334155;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* ── Preview column ── */
+.qso-preview-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.qso-preview-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.qso-preview-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.qso-qr-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  animation: fade-in 0.3s ease;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.qso-qr-meta {
+  display: flex;
+  gap: 8px;
+  font-size: 12px;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  color: #475569;
+}
+
+.qso-qr-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 32px 16px;
+  color: #334155;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* ── EC Guide ── */
+
+.qso-ec-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.qso-ec-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.qso-ec-row:hover {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+.qso-ec-row-active {
+  background: rgba(99, 102, 241, 0.08);
+  border-color: rgba(99, 102, 241, 0.3) !important;
+}
+
+.qso-ec-badge {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  background: #0f172a;
+  border: 1px solid #334155;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #94a3b8;
+  flex-shrink: 0;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+.qso-ec-row-active .qso-ec-badge {
+  background: rgba(99, 102, 241, 0.2);
+  border-color: #6366f1;
+  color: #a5b4fc;
+}
+
+.qso-ec-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.qso-ec-use {
+  font-size: 11px;
+  color: #475569;
+  margin-top: 2px;
+  line-height: 1.4;
+}
+
+/* ── QSO Responsive ── */
+@media (max-width: 768px) {
+  .qso-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .qso-preview-col {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .qso-preview-card,
+  .qso-ec-guide {
+    flex: 1;
+    min-width: 260px;
+  }
+}
+
+@media (max-width: 520px) {
+  .qso-row {
+    grid-template-columns: 1fr;
+  }
+
+  .qso-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .qso-preview-col {
+    flex-direction: column;
+  }
 }

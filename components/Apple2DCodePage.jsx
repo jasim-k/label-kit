@@ -47,7 +47,7 @@ export default function Apple2DCodePage() {
       if (!codeItem) continue
       const imgData = codeItem.toDataURL('image/png')
       const imgWidth = 80
-      const imgHeight = 80
+      const imgHeight = 40  // PDF417 is typically wider than tall
       const x = (pageWidth - imgWidth) / 2
       pdf.addImage(imgData, 'PNG', x, y, imgWidth, imgHeight)
       y += imgHeight + 2

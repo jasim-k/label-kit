@@ -12,6 +12,7 @@
     "jsbarcode": "^3.12.3",
     "jspdf": "^4.1.0",
     "next": "^15.3.3",
+    "pdf417-generator": "^1.0.5",
     "qrcode.react": "^4.2.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"

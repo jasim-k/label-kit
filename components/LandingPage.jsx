@@ -125,16 +125,49 @@ const tools = [
       </svg>
     ),
   },
+  {
+    href: '/html-viewer',
+    title: 'HTML Viewer',
+    description: 'Write or paste HTML and see a live preview instantly. Scripts run in a sandboxed iframe — great for testing snippets.',
+    tag: 'Live Preview',
+    isNew: true,
+    color: '#f97316',
+    glow: 'rgba(249,115,22,0.22)',
+    iconBg: 'rgba(249,115,22,0.12)',
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <polyline points="16 18 22 12 16 6" />
+        <polyline points="8 6 2 12 8 18" />
+      </svg>
+    ),
+  },
+  {
+    href: '/password-generator',
+    title: 'Password Generator',
+    description: 'Generate cryptographically secure passwords with custom length, character sets, and advanced options like bulk generation.',
+    tag: 'Crypto Secure',
+    isNew: true,
+    color: '#14b8a6',
+    glow: 'rgba(20,184,166,0.22)',
+    iconBg: 'rgba(20,184,166,0.12)',
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <rect x="3" y="11" width="18" height="11" rx="2" />
+        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+        <circle cx="12" cy="16" r="1.5" fill="currentColor" stroke="none" />
+      </svg>
+    ),
+  },
 ]
 
 export default function LandingPage() {
   return (
     <div className="landing">
       <div className="landing-hero">
-        <p className="landing-eyebrow">Label &amp; QR Generation Suite</p>
-        <h1 className="landing-title">LabelKit</h1>
+        <p className="landing-eyebrow">Free Browser-Based Developer Tools</p>
+        <h1 className="landing-title">Toolhaus</h1>
         <p className="landing-tagline">
-          Six precision tools for barcodes, QR codes &amp; labels.<br />
+          Eight precision tools for barcodes, QR codes, passwords &amp; more.<br />
           Runs entirely in your browser — nothing leaves your device.
         </p>
         <div className="landing-pills">

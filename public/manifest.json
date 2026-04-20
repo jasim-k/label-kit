@@ -1,7 +1,7 @@
 {
-  "name": "LabelKit",
-  "short_name": "LabelKit",
-  "description": "Free online barcode and Apple 2D code generator with PDF export",
+  "name": "Toolhaus",
+  "short_name": "Toolhaus",
+  "description": "Free browser-based developer tools — barcodes, QR codes, passwords, and more",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0f172a",

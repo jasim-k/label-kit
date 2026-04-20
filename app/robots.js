@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://label-kit.vercel.app/sitemap.xml',
+    sitemap: 'https://my-toolhaus.vercel.app/sitemap.xml',
   }
 }

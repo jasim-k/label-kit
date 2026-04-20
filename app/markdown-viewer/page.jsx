@@ -1,7 +1,7 @@
 import MarkdownViewerPage from '../../components/MarkdownViewerPage'
 
 export const metadata = {
-  title: 'Markdown Viewer | LabelKit',
+  title: 'Markdown Viewer | Toolhaus',
   description: 'Paste Markdown and instantly see a rendered live preview — runs entirely in your browser.',
 }
 

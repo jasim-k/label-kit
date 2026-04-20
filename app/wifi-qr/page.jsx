@@ -1,7 +1,7 @@
 import WifiQRPage from '../../components/WifiQRPage'
 
 export const metadata = {
-  title: 'Wi-Fi QR Code Maker | LabelKit',
+  title: 'Wi-Fi QR Code Maker | Toolhaus',
   description: 'Generate a QR code that connects phones to your Wi-Fi instantly.',
 }
 

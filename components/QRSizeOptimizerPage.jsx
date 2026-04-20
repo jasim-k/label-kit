@@ -66,7 +66,7 @@ export default function QRSizeOptimizerPage() {
   const handleCopy = useCallback(() => {
     if (!version) return
     const text = [
-      `QR Size Optimizer — LabelKit`,
+      `QR Size Optimizer — Toolhaus`,
       ``,
       `Content: ${content}`,
       `Bytes: ${bytes}`,

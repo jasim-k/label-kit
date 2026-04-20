@@ -8,6 +8,9 @@ const siteUrl = 'https://my-toolhaus.vercel.app'
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
+  verification: {
+    google: 'YNO3BtfH9wt11smMWomh9Nv8ym2481XHcOeCfHZXp-M',
+  },
   title: {
     default: 'Toolhaus - Free Browser-Based Developer Tools',
     template: '%s | Toolhaus',
